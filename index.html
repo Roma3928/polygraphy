@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.min.css    " />
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -193,7 +194,7 @@
             </div>
         </section>
 
-        <aside class="aside">
+        <aside class="aside section">
             <div class="container">
                 <h1 class="section__title">Главная</h1>
                 <div class="aside__content">
@@ -206,7 +207,7 @@
                         </div>
                     </div>
 
-                    <div class="accordion-container aside_active" id="aside-accordion">
+                    <div class="aside-accordion aside_active" id="aside-accordion">
                         <div class="ac">
                             <h2 class="ac-header">
                                 <button class="ac-trigger" type="button">Цветная печать</button>
@@ -364,7 +365,7 @@
                         </div>
                     </div>
 
-                    <div class="acide-box_right" id="aside-box-right">
+                    <div class="aside-box_right" id="aside-box-right">
                         <ul class="aside-news__list">
                             <li class="aside-news__item">
                                 <a href="#" class="aside-news__link active-news-link">Визитки</a>
@@ -444,25 +445,117 @@
             </div>
         </aside>
 
-        <section class="gallery">
+        <section class="gallery section">
             <div class="container">
-                <div class="gallery__content">
-                    <img src="img/icon.svg" alt="">
+                <div class="gallery__content grid">
+
+                    <div class="gallery__top-box">
+                        <img src="img/gallery-top.png" alt="">
+                        <h4 class="gallery__title">Наши работы</h4>
+                        <p class="gallery__subtitle">САМОЕ ИНТЕРЕСНОЕ</p>
+                    </div>
+
+
+                    <div class="gallery__main-box grid" id="animated-thumbnails-gallery">
+                        <a class="gallery__item" data-src="img/gallery1.webp">
+                            <div class="gallery__item-img gal-bg_one" alt=""></div>
+                        </a>
+                        <a class="gallery__item" data-src="img/gallery2.webp">
+                            <div class="gallery__item-img  gal-bg_two" alt=""></div>
+                        </a>
+                        <a class="gallery__item" data-src="img/gallery3.webp">
+                            <div class="gallery__item-img  gal-bg_three" alt=""></div>
+                        </a>
+                        <a class="gallery__item" data-src="img/gallery4.webp">
+                            <div class="gallery__item-img gal-bg_four" alt=""></div>
+                        </a>
+                    </div>
+
+                    <div class="gallery__bottom-box">
+                        <a class="gallery__bottom-button" href="#">
+                            <p class="">
+                                СМОТРЕТЬ
+                                <strong>все работы</strong>
+                            </p>
+                            <svg class="gallery__bottom-svg" width="36px" height="36px" viewBox="0 0 24 24"
+                                fill="#ff0000 " xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                    stroke="#ff0000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M10.74 15.53L14.26 12L10.74 8.46997" stroke="#fff" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="gallery__socials-box">
+                        <ul class="gallery__socials-list">
+                            <li class="gallery__socials-item">
+                                <a class="gallery__socials-link" href="#"><img src="img/vk-logo.webp" alt=""></a>
+                            </li>
+                            <li class="gallery__socials-item">
+                                <a class="gallery__socials-link" href="#"><img src="img/fb-logo.webp" alt=""></a>
+                            </li>
+                            <li class="gallery__socials-item button--flex">
+                                <span>Мы в соцсетях</span>
+                            </li>
+                            <li class="gallery__socials-item">
+                                <a class="gallery__socials-link" href="#"><img src="img/odk-logo.webp" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
-
             </div>
         </section>
 
+        <section class="review section">
+            <div class="container">
+                <div class="review__content">
+                    <h2 class="review__title">ОТЗЫВЫ</h2>
+
+                    <article class="review__data">
+                        <p class="review__name">Мишина Марина</p>
+                        <p class="review__text">Работаю специалистом по рекламе в фитнес-клубе. Открылись недавно
+                            и перед открытием заказывали здесь визитки, брошюры, плакаты, личные карты для клиентов.
+                            Оценили скорость работ и цены вполне доступные. Выражаю благодарность!</p>
+                    </article>
+                    <article class="review__data">
+                        <p class="review__name">Крылов Дмитрий</p>
+                        <p class="review__text">Наша компания сотрудничает с вами уже не первый год. Вы разработали нам
+                            яркий и запоминающийся фирменный стиль. И по сей день мы обращаемся за печатью
+                            визиток,листовок и брошюр в вашу фирму. Вы никогда не подводили нас по срокам и по качеству
+                            выполнения работ. Спасибо большое!!!</p>
+                    </article>
+                    <article class="review__data">
+                        <p class="review__name">Демидов Алексей</p>
+                        <p class="review__text">С вами приятно сотрудничать! Здесь работают только профессионалы, хорошо
+                            знающие своё дело!</p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-</body>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__conrent">
+                <address class="footer__address">421001, г.Казань пр.Ф.Амирхана 8б</address>>
+                
+            </div>
 
-<script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
-<script>
-    new Accordion('.accordion-container');
-</script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
+        </div>
+    </footer>
+
+    <script src="js/lightgallery.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script>
+        new Accordion('.aside-accordion');
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
 
 </html>
