@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // show contact-modal
   const contactBtn = document.getElementById("contact-btn");
   const contactModal = document.getElementById("contact-modal")
+  const navBtn = document.getElementById("nav-btn");
+  const navModal = document.getElementById("nav-modal")
 
 
   function showContactModal() {
@@ -25,22 +27,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     else {
       contactModal.classList.add("contact-modal_active");
+      navModal.classList.remove("nav-modal_active");
     }
   }
 
   contactBtn.addEventListener('click', showContactModal);
 
    // show nav-modal
-   const navBtn = document.getElementById("nav-btn");
-   const navModal = document.getElementById("nav-modal")
- 
- 
+
    function showNavModal() {
      if (navModal.classList.contains("nav-modal_active")) {
       navModal.classList.remove("nav-modal_active");
      }
      else {
       navModal.classList.add("nav-modal_active");
+      contactModal.classList.remove("contact-modal_active");
      }
    }
  

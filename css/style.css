@@ -239,6 +239,7 @@ textarea {
 .contact-modal__data {
   text-align: center;
   color: #6c6c6c;
+  margin-bottom: var(--m-1-5);
 }
 
 .contact-modal__title {
@@ -255,7 +256,13 @@ textarea {
   color: #ff6600;
 }
 
-.contact-modal__form {
+.contact-modal__inputs{
+  display: grid;
+  gap: 7px;
+  margin-bottom: var(--m-1);
+}
+
+.contact-modal__inputs div{
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -266,7 +273,7 @@ textarea {
 }
 
 .contact-modal__textarea {
-  height: 108px
+  min-height: 108px
 }
 
 .contact-modal__input,
@@ -282,7 +289,6 @@ textarea {
   justify-content: space-between;
   gap: 15px;
   align-items: center;
-  padding-top: 10px;
 }
 
 .socials__items-box {
@@ -639,6 +645,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 190px;
 }
 
 .gallery__bottom-button {
@@ -674,6 +681,7 @@ textarea {
 .gallery__socials-item {
   max-width: 84px;
   height: 80px;
+  cursor: pointer;
 }
 
 .gallery__socials-item:nth-child(3) {
@@ -904,37 +912,26 @@ textarea {
     left: 0;
   }
 
+  .contact-modal__inner,
+  .socials__list{
+    flex-direction: row;
+  }
+
+  .contact-modal__inputs{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .socials__items-box{
+    gap: 15px;
+  }
+
   .main {
     display: grid;
     gap: 10px;
     padding-top: 8px;
     grid-template-columns: minmax(513px, 688px) 228px;
-    grid-template-areas: 
-            "slider aside"
-            "services review"
-            "gallery review";
   }
   
-  .slider{
-    grid-area: slider;
-  }
-
-  .services{
-    grid-area: services;
-  }
-
-  .aside{
-    grid-area: aside;
-  }
-
-  .gallery{
-    grid-area: gallery;
-  }
-
-  .review{
-    grid-area: review;
-  }
-
   .review,
   .aside{
     background-color: transparent;
@@ -942,6 +939,7 @@ textarea {
 
   .section{
     padding: 0;
+    margin-bottom: 15px;
   }
 
   .aside,
@@ -963,6 +961,46 @@ textarea {
     font-size: 15px;
   }
 
+  .swiper-button-next, 
+  .swiper-button-prev{
+    display: block;
+    top: 90%;
+  }
+
+  .swiper-button-next{
+    right: 24px;
+  }
+
+  .swiper-button-prev{
+    left: 24px;
+  }
+
+  .swiper-button-next::after, 
+  .swiper-button-prev::after{
+    content: "";
+    background-image: url(../img/arrow-right.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+
+  .swiper-button-prev::after{
+    transform: scale(-1);
+  }
+
+  .footer__address{
+    align-self: flex-start;
+  }
+
+  .footer__data-bottom{
+    flex-direction: row;
+    justify-content: space-between
+  }
+
 }
 
 @media screen and (min-width: 940px) {
@@ -971,7 +1009,8 @@ textarea {
       margin: 0 auto;
   }
   
-  .footer__map{
+  .footer__data-top,
+  .footer__data-bottom{
     max-width: 940px;
     margin: 0 auto;
   }
@@ -979,4 +1018,59 @@ textarea {
   .main{
     gap: 24px;
   }
+
+  .services__list{
+    gap: 20px;
+  }
+
+  .services__item{
+    width: 190px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__box{
+    margin: var(--m-1-5) 0;
+  }
+
+  .nav-modal__list{
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .gallery__content {
+    align-items: start;
+  }
+
+  .gallery__main-box{
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    align-content: center;
+  }
+
+  .gallery__item:nth-child(1){
+    grid-column: 1/-1;
+  }
+
+  .gallery__socials-box{
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    align-self: end;
+  }
+
+  .gallery__bottom-box{
+    /* display: block; */
+
+    grid-row: 2/3;
+    align-self: end;
+    justify-content: flex-end;
+    transform: translate(170px, -25px);
+  }
+
+  .gallery__socials-list{
+    justify-content: flex-start;
+  }
+
 }

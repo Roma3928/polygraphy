@@ -40,52 +40,58 @@
 
                             <div class="contact-modal" id="contact-modal">
                                 <div class="contact-modal__inner">
-                                    <div class="contact-modal__data">
-                                        <h2 class="contact-modal__title">Обратная связь</h2>
-                                        <p class="contact-modal__text">Оставьте заявку прямо сейчас и получите в
-                                            <span>подарок</span> 20 визиток бесплатно!
-                                        </p>
+                                    <div>
+                                        <div class="contact-modal__data">
+                                            <h2 class="contact-modal__title">Обратная связь</h2>
+                                            <p class="contact-modal__text">Оставьте заявку прямо сейчас и получите в
+                                                <span>подарок</span> 20 визиток бесплатно!
+                                            </p>
+                                        </div>
+                                        <form class="contact-modal__form" action="" method="post">
+                                            <div class="contact-modal__inputs">
+                                                <div>
+                                                    <input class="contact-modal__input" type="text" placeholder="Имя *">
+                                                    <input class="contact-modal__input" type="text"
+                                                        placeholder="Телефон/E-mail *">
+                                                </div>
+                                                <textarea class="contact-modal__textarea"
+                                                    placeholder="Комментарии *"></textarea>
+                                            </div>
+                                            <ul class="socials__list">
+                                                <div class="socials__items-box">
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img"
+                                                                src="img/whatsapp-icon.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img" src="img/viber-icon.svg"
+                                                                alt=""></a>
+                                                    </li>
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img"
+                                                                src="img/telegram-icon.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img"
+                                                                src="img/instagram-icon.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img"
+                                                                src="img/facebook-icon.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="socials__item">
+                                                        <a href="#"><img class="socials__img" src="img/vk-icon.svg"
+                                                                alt=""></a>
+                                                    </li>
+                                                </div>
+                                                <li>
+                                                    <button class="socials__button button--flex"
+                                                        type="submit">Отправить</button>
+                                                </li>
+                                            </ul>
+                                        </form>
                                     </div>
 
-                                    <form class="contact-modal__form" action="" method="post">
-                                        <input class="contact-modal__input" type="text" placeholder="Имя *">
-                                        <input class="contact-modal__input" type="text" placeholder="Телефон/E-mail *">
-                                        <textarea class="contact-modal__textarea"
-                                            placeholder="Комментарии *"></textarea>
-
-                                        <ul class="socials__list">
-                                            <div class="socials__items-box">
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/whatsapp-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/viber-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/telegram-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/instagram-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/facebook-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                                <li class="socials__item">
-                                                    <a href="#"><img class="socials__img" src="img/vk-icon.svg"
-                                                            alt=""></a>
-                                                </li>
-                                            </div>
-                                            <li>
-                                                <button class="socials__button button--flex"
-                                                    type="submit">Отправить</button>
-                                            </li>
-                                        </ul>
-                                    </form>
 
                                     <div class="timetable">
                                         <h2 class="timetable__title">РЕЖИМ РАБОТЫ</h2>
@@ -139,439 +145,449 @@
         </header>
 
         <main class="main">
-            <section class="slider section">
-                <div class="swiper services-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="slider-img" src="img/slide1.webp" alt="">
-                            <div class="slider-bottom">
-                                <h3 class="slider-bottom__title">Широкоформатная печать</h3>
-                                <p class="slider-bottom__info">Баннеры, растяжки, фотообои</p>
+            <div>
+                <section class="slider section">
+                    <div class="swiper services-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="slider-img" src="img/slide1.webp" alt="">
+                                <div class="slider-bottom">
+                                    <h3 class="slider-bottom__title">Широкоформатная печать</h3>
+                                    <p class="slider-bottom__info">Баннеры, растяжки, фотообои</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slider-img" src="img/slide2.webp" alt="">
+                                <div class="slider-bottom">
+                                    <h3 class="slider-bottom__title">Цветная печать</h3>
+                                    <p class="slider-bottom__info">Удивите своих близких</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slider-img" src="img/slide3.webp" alt="">
+                                <div class="slider-bottom">
+                                    <h3 class="slider-bottom__title">Закажите любую услугу не отходя от компьютера</h3>
+                                    <p class="slider-bottom__info">Визитки, листовки, буклеты, плакаты</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img class="slider-img" src="img/slide2.webp" alt="">
-                            <div class="slider-bottom">
-                                <h3 class="slider-bottom__title">Цветная печать</h3>
-                                <p class="slider-bottom__info">Удивите своих близких</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="slider-img" src="img/slide3.webp" alt="">
-                            <div class="slider-bottom">
-                                <h3 class="slider-bottom__title">Закажите любую услугу не отходя от компьютера</h3>
-                                <p class="slider-bottom__info">Визитки, листовки, буклеты, плакаты</p>
-                            </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </section>
+
+                <section class="services section">
+                    <div class="services__content">
+                        <div class="container">
+                            <h1 class="section__title">Услуги</h1>
+                            <ul class="services__list">
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Цвеная печать</p>
+                                    </a>
+                                </li>
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Полиграфия</p>
+                                    </a>
+                                </li>
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Печати и штампы</p>
+                                    </a>
+                                </li>
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Реклама и Конструкции</p>
+                                    </a>
+                                </li>
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Резка и гравировка</p>
+                                    </a>
+                                </li>
+                                <li class="services__item">
+                                    <a href="#">
+                                        <img src="img/services1.jpg" alt="">
+                                        <p>Наш сервис</p>
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </section>
+                </section>
 
-            <section class="services section">
-                <div class="services__content">
+                <section class="gallery section">
                     <div class="container">
-                        <h1 class="section__title">Услуги</h1>
-                        <ul class="services__list">
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Цвеная печать</p>
-                                </a>
-                            </li>
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Полиграфия</p>
-                                </a>
-                            </li>
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Печати и штампы</p>
-                                </a>
-                            </li>
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Реклама и Конструкции</p>
-                                </a>
-                            </li>
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Резка и гравировка</p>
-                                </a>
-                            </li>
-                            <li class="services__item">
-                                <a href="#">
-                                    <img src="img/services1.jpg" alt="">
-                                    <p>Наш сервис</p>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="gallery__content grid">
 
-                    </div>
-                </div>
-            </section>
+                            <div class="gallery__top-box">
+                                <img src="img/gallery-top.png" alt="">
+                                <div>
+                                    <h4 class="gallery__title">Наши работы</h4>
+                                    <p class="gallery__subtitle">САМОЕ ИНТЕРЕСНОЕ</p>
+                                </div>
 
-            <aside class="aside section">
-                <div class="container">
-                    <h1 class="section__title">Главная</h1>
-                    <div class="aside__content">
-                        <div class="aside__tumblers">
-                            <div class="aside__tumblers-btn aside__tumblers-btn_active" id="aside-btn-first">
-                                УСЛУГИ
                             </div>
-                            <div class="aside__tumblers-btn" id="aside-btn-second">
-                                ПРОДУКЦИЯ
-                            </div>
-                        </div>
 
-                        <div class="aside-accordion aside_active" id="aside-accordion">
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button class="ac-trigger" type="button">Цветная печать</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">цифровая</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">офсетная</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">интерьерная</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">банерная</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">сувенирная</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="gallery__main-box_left" id="animated-thumbnails-gallery-left">
+                                <a class="gallery__item" data-src="img/gallery1.webp">
+                                    <div class="gallery__item-img gal-bg_one" alt=""></div>
+                                </a>
                             </div>
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button type="button" class="ac-trigger">Полиграфия</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">тиражирование</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">сканирование</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">копирование</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">ламинирование</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">фольгирование</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">переплет</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button type="button" class="ac-trigger">Печати и Штампы</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">печати</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">штампы</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">факсимили</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">клише</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">флеш печати</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button type="button" class="ac-trigger">Реклама и Конструкции</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">буквы</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">короба</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">гибкий неон</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">штендер</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">сити формат</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button type="button" class="ac-trigger">Резка и гравировка</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">пластик</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">композит</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">фанера</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">ПВХ</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">МДФ</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="ac">
-                                <h2 class="ac-header">
-                                    <button type="button" class="ac-trigger">Наш сервис</button>
-                                </h2>
-                                <div class="ac-panel">
-                                    <ul class="aside-accordion__list">
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Установка ОС</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Усановка Программ</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Установка
-                                                Антивирус</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Установка
-                                                драйверов</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Заправка Катриджей</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Ремонт Компьютеров</a>
-                                        </li>
-                                        <li class="aside-accordion__item">
-                                            <a href="#" class="aside-accordion__link">Модернизация ПК</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="aside-box_right" id="aside-box-right">
-                            <ul class="aside-products__list">
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link active-products-link">Визитки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Бейджи</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Бланки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Ф.бланки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Буклеты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Брошюры</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Дипломы</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Сертификаты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Листовки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Наклейки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Открытки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">коробки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">пакеты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Конверты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Календари</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Папки</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Приглашения</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Флаеры</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Каталоги</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Газеты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Книги</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Журналы</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Плакаты</a>
-                                </li>
-                                <li class="aside-products__item">
-                                    <a href="#" class="aside-products__link">Меню</a>
-                                </li>
-                            </ul>
+                            <div class="gallery__main-box grid" id="animated-thumbnails-gallery">
+                                <a class="gallery__item" data-src="img/gallery2.webp">
+                                    <div class="gallery__item-img  gal-bg_two" alt=""></div>
+                                </a>
+                                <a class="gallery__item" data-src="img/gallery3.webp">
+                                    <div class="gallery__item-img  gal-bg_three" alt=""></div>
+                                </a>
+                                <a class="gallery__item" data-src="img/gallery4.webp">
+                                    <div class="gallery__item-img gal-bg_four" alt=""></div>
+                                </a>
+                            </div>
+
+                            <div class="gallery__bottom-box">
+                                <a class="gallery__bottom-button" href="#">
+                                    <p class="">
+                                        СМОТРЕТЬ
+                                        <strong>все работы</strong>
+                                    </p>
+                                    <svg class="gallery__bottom-svg" width="36px" height="36px" viewBox="0 0 24 24"
+                                        fill="#ff0000 " xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="#ff0000" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.74 15.53L14.26 12L10.74 8.46997" stroke="#fff" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="gallery__socials-box">
+                                <ul class="gallery__socials-list">
+                                    <li class="gallery__socials-item">
+                                        <a class="gallery__socials-link" href="#"><img src="img/vk-logo.webp"
+                                                alt=""></a>
+                                    </li>
+                                    <li class="gallery__socials-item">
+                                        <a class="gallery__socials-link" href="#"><img src="img/fb-logo.webp"
+                                                alt=""></a>
+                                    </li>
+                                    <li class="gallery__socials-item button--flex">
+                                        <span>Мы в соцсетях</span>
+                                    </li>
+                                    <li class="gallery__socials-item">
+                                        <a class="gallery__socials-link" href="#"><img src="img/odk-logo.webp"
+                                                alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </aside>
-
-            <section class="gallery section">
-                <div class="container">
-                    <div class="gallery__content grid">
-
-                        <div class="gallery__top-box">
-                            <img src="img/gallery-top.png" alt="">
-                            <div>
-                                <h4 class="gallery__title">Наши работы</h4>
-                                <p class="gallery__subtitle">САМОЕ ИНТЕРЕСНОЕ</p>
+                </section>
+            </div>
+            <div>
+                <aside class="aside section">
+                    <div class="container">
+                        <h1 class="section__title">Главная</h1>
+                        <div class="aside__content">
+                            <div class="aside__tumblers">
+                                <div class="aside__tumblers-btn aside__tumblers-btn_active" id="aside-btn-first">
+                                    УСЛУГИ
+                                </div>
+                                <div class="aside__tumblers-btn" id="aside-btn-second">
+                                    ПРОДУКЦИЯ
+                                </div>
                             </div>
 
-                        </div>
+                            <div class="aside-accordion aside_active" id="aside-accordion">
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button class="ac-trigger" type="button">Цветная печать</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">цифровая</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">офсетная</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">интерьерная</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">банерная</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">сувенирная</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button type="button" class="ac-trigger">Полиграфия</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">тиражирование</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">сканирование</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">копирование</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">ламинирование</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">фольгирование</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">переплет</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button type="button" class="ac-trigger">Печати и Штампы</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">печати</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">штампы</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">факсимили</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">клише</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">флеш печати</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button type="button" class="ac-trigger">Реклама и Конструкции</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">буквы</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">короба</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">гибкий неон</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">штендер</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">сити формат</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button type="button" class="ac-trigger">Резка и гравировка</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">пластик</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">композит</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">фанера</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">ПВХ</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">МДФ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ac">
+                                    <h2 class="ac-header">
+                                        <button type="button" class="ac-trigger">Наш сервис</button>
+                                    </h2>
+                                    <div class="ac-panel">
+                                        <ul class="aside-accordion__list">
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Установка ОС</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Усановка Программ</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Установка
+                                                    Антивирус</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Установка
+                                                    драйверов</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Заправка Катриджей</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Ремонт Компьютеров</a>
+                                            </li>
+                                            <li class="aside-accordion__item">
+                                                <a href="#" class="aside-accordion__link">Модернизация ПК</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="gallery__main-box_left" id="animated-thumbnails-gallery-left">
-                            <a class="gallery__item" data-src="img/gallery1.webp">
-                                <div class="gallery__item-img gal-bg_one" alt=""></div>
-                            </a>
+                            <div class="aside-box_right" id="aside-box-right">
+                                <ul class="aside-products__list">
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link active-products-link">Визитки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Бейджи</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Бланки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Ф.бланки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Буклеты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Брошюры</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Дипломы</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Сертификаты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Листовки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Наклейки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Открытки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">коробки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">пакеты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Конверты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Календари</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Папки</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Приглашения</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Флаеры</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Каталоги</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Газеты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Книги</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Журналы</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Плакаты</a>
+                                    </li>
+                                    <li class="aside-products__item">
+                                        <a href="#" class="aside-products__link">Меню</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <div class="gallery__main-box grid" id="animated-thumbnails-gallery">
-                            <a class="gallery__item" data-src="img/gallery2.webp">
-                                <div class="gallery__item-img  gal-bg_two" alt=""></div>
-                            </a>
-                            <a class="gallery__item" data-src="img/gallery3.webp">
-                                <div class="gallery__item-img  gal-bg_three" alt=""></div>
-                            </a>
-                            <a class="gallery__item" data-src="img/gallery4.webp">
-                                <div class="gallery__item-img gal-bg_four" alt=""></div>
-                            </a>
-                        </div>
-
-                        <div class="gallery__bottom-box">
-                            <a class="gallery__bottom-button" href="#">
-                                <p class="">
-                                    СМОТРЕТЬ
-                                    <strong>все работы</strong>
-                                </p>
-                                <svg class="gallery__bottom-svg" width="36px" height="36px" viewBox="0 0 24 24"
-                                    fill="#ff0000 " xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                                        stroke="#ff0000" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M10.74 15.53L14.26 12L10.74 8.46997" stroke="#fff" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-
-                        <div class="gallery__socials-box">
-                            <ul class="gallery__socials-list">
-                                <li class="gallery__socials-item">
-                                    <a class="gallery__socials-link" href="#"><img src="img/vk-logo.webp" alt=""></a>
-                                </li>
-                                <li class="gallery__socials-item">
-                                    <a class="gallery__socials-link" href="#"><img src="img/fb-logo.webp" alt=""></a>
-                                </li>
-                                <li class="gallery__socials-item button--flex">
-                                    <span>Мы в соцсетях</span>
-                                </li>
-                                <li class="gallery__socials-item">
-                                    <a class="gallery__socials-link" href="#"><img src="img/odk-logo.webp" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
-            </section>
+                </aside>
 
-            <section class="review section">
-                <div class="container">
-                    <div class="review__content">
-                        <h2 class="review__title">ОТЗЫВЫ</h2>
+                <section class="review section">
+                    <div class="container">
+                        <div class="review__content">
+                            <h2 class="review__title">ОТЗЫВЫ</h2>
 
-                        <article class="review__data">
-                            <p class="review__name">Мишина Марина</p>
-                            <p class="review__text">Работаю специалистом по рекламе в фитнес-клубе. Открылись недавно
-                                и перед открытием заказывали здесь визитки, брошюры, плакаты, личные карты для клиентов.
-                                Оценили скорость работ и цены вполне доступные. Выражаю благодарность!</p>
-                        </article>
-                        <article class="review__data">
-                            <p class="review__name">Крылов Дмитрий</p>
-                            <p class="review__text">Наша компания сотрудничает с вами уже не первый год. Вы разработали
-                                нам
-                                яркий и запоминающийся фирменный стиль. И по сей день мы обращаемся за печатью
-                                визиток,листовок и брошюр в вашу фирму. Вы никогда не подводили нас по срокам и по
-                                качеству
-                                выполнения работ. Спасибо большое!!!</p>
-                        </article>
-                        <article class="review__data">
-                            <p class="review__name">Демидов Алексей</p>
-                            <p class="review__text">С вами приятно сотрудничать! Здесь работают только профессионалы,
-                                хорошо
-                                знающие своё дело!</p>
-                        </article>
+                            <article class="review__data">
+                                <p class="review__name">Мишина Марина</p>
+                                <p class="review__text">Работаю специалистом по рекламе в фитнес-клубе. Открылись
+                                    недавно
+                                    и перед открытием заказывали здесь визитки, брошюры, плакаты, личные карты для
+                                    клиентов.
+                                    Оценили скорость работ и цены вполне доступные. Выражаю благодарность!</p>
+                            </article>
+                            <article class="review__data">
+                                <p class="review__name">Крылов Дмитрий</p>
+                                <p class="review__text">Наша компания сотрудничает с вами уже не первый год. Вы
+                                    разработали
+                                    нам
+                                    яркий и запоминающийся фирменный стиль. И по сей день мы обращаемся за печатью
+                                    визиток,листовок и брошюр в вашу фирму. Вы никогда не подводили нас по срокам и по
+                                    качеству
+                                    выполнения работ. Спасибо большое!!!</p>
+                            </article>
+                            <article class="review__data">
+                                <p class="review__name">Демидов Алексей</p>
+                                <p class="review__text">С вами приятно сотрудничать! Здесь работают только
+                                    профессионалы,
+                                    хорошо
+                                    знающие своё дело!</p>
+                            </article>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
     </div>
     <footer class="footer">
         <div class="footer__conrent ">
             <div class="footer__data-top">
-                <address class="footer__address">421001, г.Казань пр.Ф.Амирхана 8б</address>
+                <address class="footer__address">Россия, 421001, г.Казань, улица Фатыха Амирхана, 8Б</address>
 
                 <div class="footer__map">
                     <script type="text/javascript" charset="utf-8" async
